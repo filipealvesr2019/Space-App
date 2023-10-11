@@ -6,11 +6,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <style> </style>
-
-      <h1>The Design System</h1>
-
-      <img src="the-design-system.jpg" alt="the design system"></img>
+      <div  className="container">
+        <h1>Design system</h1>
+        <section id="colors" ></section>
+      </div>
     </>
   );
 }
