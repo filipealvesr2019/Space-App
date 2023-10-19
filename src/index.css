@@ -1,12 +1,14 @@
-/*-------------------------------------*/
-/*Custom properties                                */
-/*-------------------------------------*/
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
 :root {
-    /*colors*/
-    --clr-dark:230 35% 7%;
-    --clr-light:231 77% 90%;
-    --clr-white:0 0% 100%;
-    /*font-size*/
+    /* colors */
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+    
+    /* font-sizes */
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
@@ -15,41 +17,39 @@
     --fs-400: 1.125rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
-
-     /* font-families */
-     --ff-serif: "Bellefair", serif;
-     --ff-sans-cond: "Barlow Condensed", sans-serif;
-     --ff-sans-normal: "Barlow", sans-serif;
+    
+    /* font-families */
+    --ff-serif: "Bellefair", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
 }
-/*-------------------------------------*/
-/*Reset                                */
-/*-------------------------------------*/
+
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
 
 /* Box sizing */
-
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-
-/* Reset Margins */
-
+/* Reset margins */
 body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
 p,
 figure,
 picture {
-    margin: 0;
-    padding: 0;
+    margin: 0; 
 }
-
 
 h1,
 h2,
@@ -61,25 +61,24 @@ p {
     font-weight: 400;
 }
 
-
 /* set up the body */
-body{  
-    line-height: 1.5;
-    min-height: 100vh;
+body {
     font-family: var(--ff-sans-normal);
     font-size: var(--fs-400);
     color: hsl( var(--clr-white) );
-    background-color: hsl( var(--clr-dark) )
+    background-color: hsl( var(--clr-dark) );
+    line-height: 1.5;
+    min-height: 100vh;
 }
 
 /* make images easier to work with */
 img,
-picture {
+picutre {
     max-width: 100%;
     display: block;
 }
 
-/* make forms elements easier to work with */
+/* make form elements easier to work with */
 input,
 button,
 textarea,
@@ -87,65 +86,54 @@ select {
     font: inherit;
 }
 
-/* remove animations for people  who've turnded them off*/
-@media (prefers-reduced-motion:reduce){
-    *,
-    ::before,
-    ::after {
-        animation-duration: 0.1ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 
-/*-------------------------------------*/
-/*Utility classes                                */
-/*-------------------------------------*/
-.flex{
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.flex {
     display: flex;
     gap: var(--gap, 1rem);
 }
-.grid{
+
+.grid {
     display: grid;
     gap: var(--gap, 1rem);
 }
 
-.container{
-    /* seting padding right and left*/
+.container {
     padding-inline: 2em;
-    /* seting margin right and left as auto */
     margin-inline: auto;
     max-width: 80rem;
 }
 
-.sr-only{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap;
-    border: 0;
+.sr-only {
+  position: absolute; 
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px; 
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }
 
-
-
-
-.box {
-    background: lightblue;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-
-/*-------------------------------------*/
-/*Colors                               */
-/*-------------------------------------*/
+/* colors */
 
 .bg-dark { background-color: hsl( var(--clr-dark) );}
 .bg-accent { background-color: hsl( var(--clr-light) );}
@@ -154,51 +142,6 @@ select {
 .text-dark { color: hsl( var(--clr-dark) );}
 .text-accent { color: hsl( var(--clr-light) );}
 .text-white { color: hsl( var(--clr-white) );}
-
-.wrapper{
-    width: 100%;
-    height: 100%;
-}
-
-
-#colors{
-    display: flex;
-    gap: 3rem;
-  
-
-
-}
-
-.color1{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    row-gap: 1rem;
-    
-}
-
-
-.color2{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    row-gap: 1rem;
-
-}
-
-
-.color3{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    row-gap: 1rem;
-}
-
-.h2{
-    margin-bottom: 3rem;
-}
-
-
 
 /* typography */
 
@@ -220,7 +163,6 @@ select {
 .fs-400 { font-size: var(--fs-400); }
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
-
 
 .fs-900,
 .fs-800,
