@@ -6,7 +6,7 @@ function App() {
       <h1 className="uppercase">Design system</h1>
 
       <section id="colors" style={{ margin: '4rem 0' }}>
-        <h2 className="uppercase"><span>01</span> colors</h2>
+        <h2 className="numbered-title"><span>01</span> colors</h2>
         <div className="flex">
           <div style={{ flexGrow: 1 }}>
             <div className="bg-dark text-white ff-serif fs-500" style={{ padding: '3rem 1rem 1rem', border: '1px solid white' }}>#0B0D17</div>
@@ -27,7 +27,7 @@ function App() {
       </section>
 
       <section id="typography" style={{ margin: '4rem 0' }}>
-        <h2><span>02 </span>Typography</h2>
+        <h2 className="numbered-title"><span>02 </span>Typography</h2>
         <div className="flex">
           <div style={{ flexBasis: '100%' }}>
             <div>
