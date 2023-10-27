@@ -29,7 +29,7 @@ function App() {
       <section id="typography" style={{ margin: '4rem 0' }}>
         <h2 className="numbered-title"><span>02 </span>Typography</h2>
         <div className="flex">
-          <div style={{ flexBasis: '100%' }}>
+          <div className='flow' style={{ flexBasis: '100%'}}>
             <div>
               <p className="text-accent">Heading 1 - Bellefair Regular - 150px</p>
               <p className="fs-900 ff-serif uppercase">Earth</p>
@@ -52,7 +52,7 @@ function App() {
             </div>
           </div>
 
-          <div style={{ flexBasis: '100%' }}>
+          <div className='flow' style={{ flexBasis: '100%', columnGap:"4rem"}}>
             <div>
               <p className="text-accent">Subheading 1 - Bellefair Regular - 28px</p>
               <p className="fs-500 ff-serif uppercase">384,400 km</p>
