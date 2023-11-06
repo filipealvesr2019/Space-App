@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./sass/variable.scss"
 function App() {
   return (
     <div className="container">
@@ -72,6 +72,27 @@ function App() {
           </div>
         </div>
       </section>
+
+       
+      <section className='flow' id="interactive-elements">
+            <h2 className="numbered-title"><span>03</span> Interactive elements</h2>
+            <div></div>
+            <div className="flex">
+                <div style={{marginTop:"5rem"}}>
+                    {/* explore button */}
+                    <a href="#" className="large-button uppercase ff-serif fs-600 text-dark bg-white">Explore</a>
+                </div>
+
+                <div style={{marginBottom:"50vh"}}>
+                    {/* Tabs */}
+
+                    {/* Dots */}
+
+                    {/* Numbers */}
+                </div>
+            </div>
+        </section>
+            
     </div>
   );
 }
