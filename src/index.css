@@ -209,3 +209,6 @@ select {
     border-radius: 50%;
     text-decoration: none;
 }
+
+.large-button:hover{
+}
